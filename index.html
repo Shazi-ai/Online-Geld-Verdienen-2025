@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn proven strategies to make money online in 2025 with this step-by-step guide.">
+    <title>Online Geld Verdienen 2025</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(160deg, #e8f1e9 0%, #d4e4d9 100%);
+            min-height: 100vh;
+            margin: 0;
+            color: #2a2a2a;
+            overflow-x: hidden;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            color: #fff;
+            border-radius: 0 0 60px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #27ae60 0%, #219653 50%, #1a3e2f 100%);
+            background-size: 200% 200%;
+            animation: gradientFlow 12s ease-in-out infinite;
+            will-change: background-position;
+        }
+        @keyframes gradientFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .card {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(145deg, #ffffff 0%, #f9fcf9 100%);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        .card-img-top {
+            height: 280px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+        }
+        .card-body {
+            padding: 40px;
+        }
+        .btn-custom {
+            background: linear-gradient(90deg, #f1c40f 0%, #e67e22 100%);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        .btn-custom:hover {
+            transform: scale(1.05);
+            opacity: 0.95;
+            animation: none;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+        }
+        .container {
+            padding: 60px 20px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            margin: 0;
+        }
+        h1 .letter {
+            display: inline-block;
+            color: #fff;
+        }
+        h1:hover .letter {
+            animation: shimmer-letter 0.6s ease-in-out;
+        }
+        @keyframes shimmer-letter {
+            0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+            50% { text-shadow: 0 0 15px rgba(255, 255, 255, 1); }
+            100% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+        }
+        .hero .lead {
+            font-size: 1.3rem;
+            font-weight: 300;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 15px auto 0;
+        }
+        .article-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #1a252f;
+            margin-bottom: 25px;
+            background: linear-gradient(90deg, #27ae60, #219653);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .article-subtitle {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .article-subtitle::before {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #f1c40f, #e67e22);
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        .article-text {
+            font-size: 1rem;
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+        @media (max-width: 768px) {
+            .hero { padding: 60px 15px; }
+            h1 { font-size: 2rem; letter-spacing: 1.5px; }
+            .card-img-top { height: 220px; }
+            .card { max-width: 90%; }
+            .article-title { font-size: 1.75rem; }
+            .article-subtitle { font-size: 1.15rem; }
+            .card-body { padding: 25px; }
+        }
+    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section with Smooth Cosmic Animation -->
+    <section class="hero">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+            <h1 id="shiny-header"></h1>
+            <p class="lead">Unlock the secrets to financial freedom from anywhere</p>
+        </div>
+    </section>
+
+    <!-- Article Section -->
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="article-title">Der ultimative Leitfaden zum Online-Geldverdienen im Jahr 2025: Ihr Fahrplan zum Erfolg</h2>
+                <p class="article-text">Haben Sie schon einmal durch Instagram gescrollt und sich gefragt: „Wie finanziert diese Person ihren Bali-Urlaub, indem sie nur Katzenvideos postet?“ Die Wahrheit ist, dass die digitale Welt des Jahres 2025 voller Möglichkeiten ist, online Geld zu verdienen – aber es ist nicht alles eitel Sonnenschein und virale TikToks. Zwischen Algorithmus-Drama, Burnout und dem Druck, „rund um die Uhr zu arbeiten“, ist der Kampf real. </p>
+                <p class="article-text">Der ultimative Leitfaden zum Online-Geldverdienen im Jahr 2025: Ihr Fahrplan zum Erfolg Dies ist keine weitere Roboterliste der „Top 10 Nebenbeschäftigungen“. Betrachten Sie dies als den schonungslos ehrlichen Leitfaden Ihres Freundes zum Online-Erfolg. Wir besprechen, was funktioniert, was nicht und wie Sie die Fallstricke vermeiden, die die meisten Anfänger in die Knie zwingen. Oh, und wir sprechen über YouTube, denn seien wir ehrlich – Sie haben bereits davon geträumt, der nächste MrBeast zu werden. </p>
+                <h3 class="article-subtitle">1. Content-Erstellung: YouTube, TikTok und die Kunst, nicht auszubrennen</h3>
+                <p class="article-text">Das Gute
+                    YouTube ist nicht mehr nur zum Auspacken von Spielzeug da. Im Jahr 2025 verdienen die Ersteller Geld mit:</p>
+                    <p class="article-text">Werbeeinnahmen: Immer noch ein Klassiker, aber Sie brauchen Aufrufe (mehr dazu später).</p>
+                    <p class="article-text">Sponsoring: Marken zahlen Ihnen dafür, dass Sie von ihrem Proteinpulver schwärmen (solange Ihr Kanal Aufmerksamkeit erregt).</p>
+                    <p class="article-text">Mitgliedschaften: Superfans zahlen 5 $/Monat für Ihr „Hinter-den-Kulissen“-Chaos auf Discord.</p>
+                    <p class="article-text">KI-Tools: Neue Plattformen helfen Ihnen, Videos in Minutenschnelle zu bearbeiten oder virale Hooks zu entwickeln.</p>
+                    <p class="article-text"><strong>So fangen Sie an (ohne den Verstand zu verlieren)</strong></p>
+    <p class="article-text">Wählen Sie eine Nische, die Sie in 6 Monaten nicht hassen werden. „Make-up-Tutorials“ sind übersättigt. „Make-up für Gamer, die nur 4 Stunden schlafen“? Jetzt reden wir.</p>
+    <p class="article-text">Klauen Sie... äh, lernen Sie von den Profis. Verwenden Sie Tools wie TubeBuddy, um herauszufinden, was gerade im Trend liegt. (Das ist nicht gruselig - es ist Recherche!)</p>
+    <p class="article-text">Sprechen Sie mit Ihrem Publikum, nicht auf es ein. Umfragen, Fragen und Antworten und das Aussprechen Ihrer eigenen Fehler schaffen Loyalität.</p>
+    <p class="article-text"><strong>Die hässliche Wahrheit</strong></p>
+    <p class="article-text">Algorithmen sind Feinde. An einem Tag bist du viral, am nächsten bekommt dein Video 3 Aufrufe (und 2 davon sind deine Mutter).</p>
+    <p class="article-text">Burnout ist unvermeidlich. 5-mal pro Woche zu posten klingt cool, bis du um 3 Uhr morgens über iMovie weinst.</p>
+    <p class="article-text">Jeder macht es. Im Jahr 2025 auffallen? Dazu brauchst du mehr als ein Ringlicht und einen Traum.</p>
+    <p class="article-text"><strong>So überleben Sie</strong></p>
+    <p class="article-text">Diversifizieren Sie sich oder sterben Sie. Verkaufen Sie Merchandise, starten Sie einen Patreon oder recyceln Sie Inhalte für TikTok-Clips.</p>
+    <p class="article-text">Arbeiten Sie bündelweise. Filmen Sie an einem Wochenende 10 Videos und planen Sie sie dann. Ihr zukünftiges Ich wird es Ihnen danken.</p>
+    <p class="article-text">Arbeiten Sie zusammen. Bilden Sie ein Team mit kleineren Kreativen. Es ist wie ein YouTube-Potluck – jeder bringt Follower mit.</p>
+    <h3 class="article-subtitle">2. Freiberufler: Lassen Sie sich dafür bezahlen, im Pyjama zu arbeiten (aber setzen Sie Grenzen!)</h3>
+    <p class="article-text"><strong>Die Chancen</strong></p>
+    <p class="article-text">KI-Flüsterer: Unternehmen brauchen Menschen, die Chatbots trainieren, damit sie nicht wie Psychopathen klingen.</p>
+    <p class="article-text">Copywriting: Ja, die Leute lesen immer noch. Vor allem Produktbeschreibungen für „umweltfreundliche Yogamatten für Katzen“.</p>
+    <p class="article-text">Grafikdesign: Canva wird Sie nicht ersetzen … noch nicht.</p>
+    <p class="article-text"><strong>Erste Schritte</strong></p>
+    <p class="article-text">Bauen Sie ein Portfolio auf, das nicht langweilig ist. Niemand interessiert sich für Ihre Schulprojekte. Gestalten Sie das Logo einer echten Marke kostenlos neu.</p>
+    <p class="article-text">Verlangen Sie, was Sie wert sind. „5 $ für ein Logo“ zieht Kunden an, die 47 Überarbeitungen verlangen.</p>
+    <p class="article-text"><strong>Die dunkle Seite</strong></p>
+    <p class="article-text">Fest oder Hungersnot. In einem Monat sind Sie ausgebucht, im nächsten überlegen Sie, ob Sie Plasma verkaufen sollen.</p>
+    <p class="article-text">Globale Konkurrenz. Jemand auf Bali wird Ihren Preis unterbieten. Rennen Sie nicht nach unten.</p>
+    <p class="article-text"><strong>Profi-Tipps</strong></p>
+    <p class="article-text">Honorare sind das Leben. Binden Sie Kunden mit monatlichen Paketen (z. B. „3 Blogbeiträge + 2 Memes“).</p>
+    <p class="article-text">Bilden Sie sich weiter oder bleiben Sie zurück. Nehmen Sie an einem LinkedIn Learning-Kurs zu KI-Tools teil. Bleiben Sie unheimlich gut in Ihrem Job.</p>
+
+    <h3 class="article-subtitle">3. E-Commerce: Verkaufen ohne Lager (oder Nervenzusammenbruch)</h3>
+    <p class="article-text"><strong>Trends 2025</strong></p>
+    <p class="article-text">Print-on-Demand: Verkaufen Sie T-Shirts mit der Aufschrift „I Paused My Game to Be Here“, ohne den Lagerbestand anzurühren.</p>
+    <p class="article-text">TikTok Shop: Verwandeln Sie virale Videos in Checkout-Links. Tanz + Produkt = Gewinn.</p>
+    <p class="article-text"><strong>Starten Sie Ihren Shop</strong></p>
+    <p class="article-text">Verwenden Sie Shopify. Es ist wie Lego für Online-Shops – keine Programmierung erforderlich.</p>
+    <p class="article-text">Testen Sie Produkte mit Dropshipping. Wenn es floppt, bleiben Sie nicht auf 500 Fidget Spinnern sitzen.</p>
+    <p class="article-text"><strong>Warum es schiefgehen könnte</strong></p>
+    <p class="article-text">Versandkatastrophen. Ihr Lieferant schickt Glitzerbomben statt Handyhüllen. Stichwort 1-Stern-Bewertungen.</p>
+    <p class="article-text">Trends sterben schnell. Erinnern Sie sich, als jeder ein „Pizzakissen mit Ananas“ wollte? Genau.</p>
+    <p class="article-text"><strong>Schadensbegrenzung</strong></p>
+    <p class="article-text">Prüfen Sie Lieferanten wie ein CIA-Agent. Bestellen Sie Muster. Überprüfen Sie Bewertungen. Beten Sie.</p>
+    <p class="article-text">Bleiben Sie flexibel. Verwenden Sie Google Trends, um schneller zu reagieren als ein TikTok-Tanz.</p>
+
+    <h3 class="article-subtitle">4. Online-Kurse: Leuten etwas beibringen, ohne ein langweiliger Professor zu sein</h3>
+    <p class="article-text"><strong>Warum es funktioniert</strong></p>
+    <p class="article-text">Jeder möchte seine Fähigkeiten verbessern. Von „ChatGPT für Oma“ bis „Kombucha-Brauen 101“.</p>
+    <p class="article-text">KI-Personalisierung: Plattformen generieren automatisch Quizze basierend auf den Fehlern der Schüler.</p>
+    <p class="article-text"><strong>Wie Sie beginnen</strong></p>
+    <p class="article-text">Verwenden Sie Ihre Inhalte neu. Verwandeln Sie YouTube-Skripte in einen Kurs. Boom – verdoppeln Sie den Umsatz.</p>
+    <p class="article-text">Verkaufen Sie Ihren Kurs vorab. Nutzen Sie ein Webinar, um das Interesse zu messen, bevor Sie 100 Stunden mit dem Filmen verbringen.</p>
+    <p class="article-text"><strong>Der Haken</strong></p>
+    <p class="article-text">Ihr Cousin verkauft auch einen Kurs. Das tut jeder auf LinkedIn.</p>
+    <p class="article-text">Produktionsdruck. Wenn Ihre Videos aussehen, als wären sie in einem Schrank gefilmt worden, werden die Leute das bemerken.</p>
+    <p class="article-text"><strong>Hacks</strong></p>
+    <p class="article-text">Nische bis es wehtut. „Excel für Hundezüchter“ > „Microsoft Office-Grundlagen“.</p>
+    <p class="article-text">Verwenden Sie Vorlagen. Canva und Descript lassen Sie ohne Filmteam professionell aussehen.</p>
+
+    <h3 class="article-subtitle">5. Krypto & NFTs: Hohes Risiko, größeres Drama</h3>
+    <p class="article-text"><strong>Die Szene 2025</strong></p>
+    <p class="article-text">NFT-Gaming: Verdiene Krypto, indem du Drachen tötest. Oder was auch immer.</p>
+    <p class="article-text">DeFi-Staking: Wie ein Sparkonto, aber mit mehr Adrenalin.</p>
+    <p class="article-text"><strong>Der Realitätscheck</strong></p>
+    <p class="article-text">Der Krypto-Winter kommt (schon wieder). Die Preise werden abstürzen. Du wirst in Panik geraten. Investiere dein Mietgeld nicht.</p>
+    <p class="article-text">Die Regulierungen werden dich durcheinanderbringen. Regierungen hassen Spaß. Bleibe auf dem Laufenden.</p>
+    <p class="article-text"><strong>Wie du nicht scheiterst</strong></p>
+    <p class="article-text">Setze nur, was du verlieren kannst. Tu so, als wäre es Vegas-Geld.</p>
+    <p class="article-text">Diversifiziere. Krypto, Aktien, Immobilien – setze nicht alle deine Eier in einen Blockchain-Korb.</p>
+
+    <h3 class="article-subtitle">6. Affiliate-Marketing: Lassen Sie sich für die Empfehlung von Dingen bezahlen, die Sie tatsächlich verwenden</h3>
+    <p class="article-text"><strong>Der Sweet Spot</strong></p>
+    <p class="article-text">Werben Sie für Amazon-Produkte, SaaS-Tools oder sogar Katzenmöbel.</p>
+    <p class="article-text">Verdienen Sie 5–30 % pro Verkauf.</p>
+    <p class="article-text"><strong>Die Fallstricke</strong></p>
+    <p class="article-text">Unternehmen kürzen Provisionen. Sie werden die Preise senken, sobald Sie Ihr Publikum gefesselt haben.</p>
+    <p class="article-text">Das Publikum riecht Blödsinn. „Dieses VPN hat mein Leben verändert!“ → Abbestellen.</p>
+    <p class="article-text"><strong>Machen Sie es richtig</strong></p>
+    <p class="article-text">Seien Sie wählerisch. Teilen Sie nur Produkte, die Sie selbst kaufen würden.</p>
+    <p class="article-text">Haftungsausschlüsse retten Leben. #ad ist nicht nur legal – es ist respektvoll</p>
+
+    <h3 class="article-subtitle">Das große Ganze: Gedeihen im Chaos des Jahres 2025</h3>
+    <p class="article-text"><strong>Problem 1: Algorithmen ignorieren Sie</strong></p>
+    <p class="article-text">Lösung: Posten Sie überall. YouTube, Instagram, LinkedIn – seien Sie ein Content-Oktopus.</p>
+    <p class="article-text"><strong>Problem 2: Einkommens-Achterbahnfahrt</strong></p>
+    <p class="article-text">Lösung: Sparen Sie 3 Monatsausgaben. Ramen ist vorübergehend, finanzielle Panik nicht.</p>
+    <p class="article-text"><strong>Problem 3: Ihr Gehirn schmilzt</strong></p>
+    <p class="article-text">Lösung: Planen Sie „bildschirmfreie“ Tage ein. Berühren Sie Gras. Streicheln Sie einen Hund.</p>
+    <p class="article-text"><strong>Problem 4: Fähigkeiten verfallen</strong></p>
+    <p class="article-text">Lösung: Widmen Sie 1 Stunde pro Woche dem Lernen. Ihr zukünftiges Ich wird Ihrem früheren Ich ein High-Five geben.</p>
+
+    <h3 class="article-subtitle">Bei Verstand bleiben (ja, das ist möglich)</h3>
+    <p class="article-text"><strong>Denkweise:</strong> Behandeln Sie Misserfolge wie unerwartete Wendungen in der Handlung. „Oh, mein Kurs ist gefloppt? Dann fange ich wohl mal einen Podcast an!“</p>
+    <p class="article-text"><strong>Community:</strong> Treten Sie einer Discord-Gruppe bei. Geteiltes Leid ist halbes Leid – und Geteiltes Leid ist halbes Leid.</p>
+    <p class="article-text"><strong>Gesundheit:</strong> Verwenden Sie Headspace zum Meditieren. Oder schreien Sie einfach in ein Kissen. Was auch immer funktioniert.</p>
+
+    <h3 class="article-subtitle">Real Talk: Sarahs Geschichte</h3>
+    <p class="article-text">Sarah hat ihren 9-to-5-Job aufgegeben, um YouTube-Videos zum Thema „Budget Travel“ zu machen. Dann hat der Algorithmus sie begraben. Anstatt zu kündigen, hat sie:</p>
+    <p class="article-text">einen Kurs gestartet, in dem sie anderen beibringt, mit einem Smartphone zu filmen.</p>
+    <p class="article-text">Patreon verwendet, um exklusive Reiseführer anzubieten.</p>
+    <p class="article-text">Mit Hostels zusammengearbeitet, um Affiliate-Deals zu machen.</p>
+    <p class="article-text">Jetzt ist sie in Thailand, nippt an Kokoswasser und bearbeitet Videos nach ihren Vorstellungen.</p>
+
+    <h3 class="article-subtitle">Schlusswort</h3>
+    <p class="article-text">Die Online-Welt des Jahres 2025 ist kein Schema, um schnell reich zu werden. Es ist ein harter Kampf, aber einer, den Sie mit Mumm, Biss und einem Plan B schaffen können. Fangen Sie klein an. Bleiben Sie konsequent. Und um Himmels willen, vergleichen Sie sich nicht mit 20-jährigen Krypto-Millionären.</p>
+    <p class="article-text">Sie sind dran. Was ist Ihr erster Schritt?</p>
+                
+                <a href="#" class="btn btn-custom text-white mt-4">Start Earning Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Shiny header effect
+        const headerText = "Online Geld Verdienen 2025";
+        const headerElement = document.getElementById('shiny-header');
+        headerText.split('').forEach((char, index) => {
+            const span = document.createElement('span');
+            span.className = 'letter';
+            span.textContent = char === ' ' ? '\u00A0' : char;
+            span.style.animationDelay = `${index * 0.04}s`;
+            headerElement.appendChild(span);
+        });
+
+        // Particle animation
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let particlesArray = [];
+
+        // Set canvas size
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = document.querySelector('.hero').offsetHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // Particle class
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = Math.random() * 0.1 - 0.05;
+                this.speedY = Math.random() * 0.1 - 0.05;
+                this.opacity = 0;
+                this.life = Math.random() * 120 + 60;
+                this.fadeIn = true;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.fadeIn) {
+                    this.opacity += 0.01;
+                    if (this.opacity >= 0.3) this.fadeIn = false;
+                } else {
+                    this.opacity -= 0.005;
+                }
+                this.life--;
+                if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+            }
+            draw() {
+                ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        // Initialize particles
+        function initParticles() {
+            for (let i = 0; i < 15; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+        initParticles();
+
+        // Animate particles
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = particlesArray.length - 1; i >= 0; i--) {
+                particlesArray[i].update();
+                particlesArray[i].draw();
+                if (particlesArray[i].life <= 0 || particlesArray[i].opacity <= 0) {
+                    particlesArray.splice(i, 1);
+                    particlesArray.push(new Particle());
+                }
+            }
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+    </script>
+</body>
+</html>
